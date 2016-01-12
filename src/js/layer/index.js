@@ -160,7 +160,7 @@ Layer.prototype.action = function(config, elem){
 };
 
 win.layer = {
-    v: '1.7',
+    v: '0.0.1',
     index: index,
     
     //核心方法
