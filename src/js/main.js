@@ -7,11 +7,15 @@
  */
 
 
-import '../styles.css'
+// import '../styles.css'
 
-// import '../scss/main.scss'
+import '!style!css!sass!../scss/main.scss'
 
-var PL = require('./dom/dom.js');
+var PD = require('./dom/dom.js');
+
+var PL = require('./layer/index.js');
+
+window.PD = PD;
 
 window.PL = PL;
 

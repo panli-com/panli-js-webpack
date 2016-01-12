@@ -47,8 +47,8 @@
 
 
 	PanLi = function( selector, context ) {
-		// 该 PanD 对象实际上只是在init构造'增强'
-		//需要初始化，如果PanD被称为（只允许被抛出的错误，如果不包括在内）
+		// 该 PanLi 对象实际上只是在init构造'增强'
+		//需要初始化，如果PanLi被称为（只允许被抛出的错误，如果不包括在内）
 		return new PanLi.fn.init( selector, context );
 	},
 
