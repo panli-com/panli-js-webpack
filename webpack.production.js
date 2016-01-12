@@ -8,11 +8,10 @@ module.exports = {
   output: {
     path: './build',
     publicPath: '/build/',
-    filename: 'bundle.js'
+    filename: 'panli.min.js'
   },
   module: {
-    loaders: [
-      { test: /\.vue$/, loader: 'vue' },
+    loaders: [     
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
       { test: /\.(png|jpg)$/, loader: 'file' },
       { test: /\.(png|jpg)$/, loader: 'url?limit=10000'},

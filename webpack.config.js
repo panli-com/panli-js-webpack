@@ -1,11 +1,11 @@
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './src/js/main.js'
   },
   output: {
     path: './build',
     publicPath: '/build/',
-    filename: 'bundle.js'
+    filename: 'panli.js'
   },
   module: {
     loaders: [
