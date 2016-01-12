@@ -1,7 +1,7 @@
 {
-  "name": "panli-js-webpack",
-  "version": "0.0.0",
-  "description": "",
+  "name": "plmi",
+  "version": "0.0.1",
+  "description": "panli web app js",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --quiet",

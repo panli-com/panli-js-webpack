@@ -1,3 +1,10 @@
+/*!
+ *
+ * Released under the MIT license
+ * http://zanjs.com
+ * update by zan
+ * Date: 2016年1月12日 14:29:11
+ */
 // dom 操作集
 
 (function( global, factory ) {
@@ -562,18 +569,7 @@ function isArraylike( obj ) {
 	return type === "array" || length === 0 ||
 		typeof length === "number" && length > 0 && ( length - 1 ) in obj;
 }
-var Sizzle =
-/*!
- * Sizzle CSS Selector Engine v2.2.0-pre
- * http://sizzlejs.com/
- *
- * Copyright 2008, 2014 PanLi Foundation, Inc. and other contributors
- * Released under the MIT license
- * http://PanLi.org/license
- *
- * Date: 2014-12-16
- */
-(function( window ) {
+var Sizzle = (function( window ) {
 
 var i,
 	support,

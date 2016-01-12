@@ -11,6 +11,8 @@
 
 import '!style!css!sass!../scss/main.scss'
 
+import '!style!css!sass!./layer/scss/main.scss'
+
 var PD = require('./dom/dom.js');
 
 var PL = require('./layer/index.js');
