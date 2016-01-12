@@ -1,6 +1,6 @@
 {
-  "name": "homedemo",
-  "version": "1.0.0",
+  "name": "panli-js-webpack",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
