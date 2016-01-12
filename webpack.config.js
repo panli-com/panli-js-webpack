@@ -9,7 +9,6 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.vue$/, loader: 'vue' },
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
       { test: /\.(png|jpg)$/, loader: 'file' },
       { test: /\.(png|jpg)$/, loader: 'url?limit=10000'},
