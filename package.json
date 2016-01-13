@@ -1,8 +1,8 @@
 {
   "name": "plmi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "panli web app js",
-  "main": "index.js",
+  "main": "build/panli.js",
   "scripts": {
     "start": "webpack-dev-server --inline --hot --quiet",
     "build": "rm -rf build/* && webpack --progress --hide-modules --config webpack.production.js"

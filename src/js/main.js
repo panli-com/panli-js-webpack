@@ -3,7 +3,7 @@
  * 
  * @auther zan
  * 
- * 2016年1月12日 11:53:38
+ * 2016年1月12日 11:53:38 
  */
 
 
@@ -13,13 +13,13 @@ import '!style!css!sass!../scss/main.scss'
 
 import '!style!css!sass!./layer/scss/main.scss'
 
-var PD = require('./dom/dom.js');
+window.PD = require('./dom/dom.js');
 
-var PL = require('./layer/index.js');
+window.PL = require('./layer/index.js');
 
-window.PD = PD;
 
-window.PL = PL;
+
+
 
 
 

@@ -182,7 +182,8 @@ win.layer = {
     load:function(){
        layer.open({
             type: 2,
-            content: ''
+            content: '',
+            shadeClose: false
         }); 
     },
     //关闭所有layer层

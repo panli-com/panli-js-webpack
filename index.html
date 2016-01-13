@@ -12,6 +12,63 @@
     <![endif]-->
     <div class="PLC">PLC</div>
     <script src="./build/panli.js"></script>
-
+    <a href="javascriot:void(0);" class="loading">Loading</a><br/><br/>
+    <a href="javascriot:void(0);" class="btn1">alert msg</a><br/><br/>
+    <a href="javascriot:void(0);" class="btn2">提示框</a><br/><br/>
+    <a href="javascriot:void(0);" class="btn3">询问框</a><br/><br/>
+    <a href="javascriot:void(0);" class="btn4">//页面层</a><br/><br/>
   </body>
+  <script>
+      PD(function(){
+          PD('.loading').on("touchend",function(){
+              PL.load();
+          })
+          
+          PD('.btn1').on("touchend",function(){
+              PL.open({
+                    content: 'Panli 您好',
+                    time: 2
+              });
+          })
+          
+          
+          PD('.btn2').on("touchend",function(){
+              PL.open({
+                    title: '提示',
+                    content: 'PL 移动版和PC版不能同时使用在同一页面。'
+                });
+          })
+          
+          
+          PD('.btn3').on("touchend",function(){
+              PL.open({
+                    title: '提示',
+                    content: '您确定要刷新一下本页面吗？',
+                    btn: ['嗯', '不要'],
+                    yes: function(index){
+                        location.reload();
+                        PL.close(index);
+                    }
+                });
+          })
+          
+          
+          PD('.btn4').on("touchend",function(){
+                    var pagei = PL.open({
+                            type: 1, //1代表页面层
+                            content: '可传入html<button class="closediy">关闭</button>',
+                            style: 'width:300px; height:200px; border:none;',
+                            success: function(oPan){
+                                var cla = 'getElementsByClassName';
+                                oPan[cla]('closediy')[0].onclick = function(){
+                                    PL.close(pagei)
+                                }
+                            }
+                        });
+          })
+          
+          
+          
+      });
+  </script>
 </html>
