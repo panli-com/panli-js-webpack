@@ -60,7 +60,7 @@ Layer.prototype.view = function(){
     var title = (function(){
         var titype = typeof config.title === 'object';
         return config.title
-        ? '<h3 style="'+ (titype ? config.title[1] : '') +'">'+ (titype ? config.title[0] : config.title)  +'</h3><button class="layermend"></button>'
+        ? ''
         : '';
     }());
     
@@ -123,13 +123,13 @@ Layer.prototype.action = function(config, elem){
     }
     
     //关闭按钮
-    if(config.title){
-        var end = elem[claname]('layermend')[0], endfn = function(){
-            config.cancel && config.cancel();
-            layer.close(that.index);
-        };
-        ready.touch(end, endfn);
-    }
+    // if(config.title){
+    //     var end = elem[claname]('layermend')[0], endfn = function(){
+    //         config.cancel && config.cancel();
+    //         layer.close(that.index);
+    //     };
+    //     ready.touch(end, endfn);
+    // }
     
     //确认取消
     var btn = function(){
@@ -160,7 +160,7 @@ Layer.prototype.action = function(config, elem){
 };
 
 win.layer = {
-    v: '0.0.1',
+    v: '0.0.2',
     index: index,
     
     //核心方法
